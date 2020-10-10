@@ -15,17 +15,17 @@ function promptUser() {
     {
       type: "input",
       name: "description",
-      message: "What is the description of your project?"
+      message: "Write a description of your project."
     },
     {
       type: "input",
       name: "installation",
-      message: "What is the installation process for your project?"
+      message: "What command should be run to install dependencies?"
     },
     {
       type: "input",
       name: "usage",
-      message: "What do users need to know to use this?"
+      message: "What does the user need to know about using the repo?"
     },
     {
       type: "list",
@@ -36,7 +36,7 @@ function promptUser() {
     {
       type: "input",
       name: "contributors",
-      message: "List the contributors."
+      message: "What does the user need to know about contributing to the repo?"
     },
     {
       type: "input",
@@ -46,19 +46,19 @@ function promptUser() {
     {
       type: "input",
       name: "email",
-      message: "What is your github email?"
+      message: "What is your email address?"
     },
     {
       type: "input",
       name: "username",
-      message: "What is your github username?"
+      message: "What is your GitHub username?"
     }
   ]);
 }
 
 function createReadme(answers) {
   return `
-#${answers.title}
+# ${answers.title}
 =========
 
 ${answers.description}
@@ -67,6 +67,7 @@ ${answers.description}
 ------
 ## Table of Contents
 <br>
+
 * [Installation](#installation)
 
 * [Usage](#usage)
@@ -82,7 +83,8 @@ ${answers.description}
 ------
 ## Installation
 <br>
-Install ${answers.installation} on your terminal to access.
+To install dependencies, run the following command: 
+${answers.installation}
 
 ------
 ## Usage
@@ -92,6 +94,7 @@ ${answers.usage}
 ------
 ## Tests
 <br>
+To run tests, run the following command:
 ${answers.tests}
 
 ------
@@ -102,13 +105,13 @@ ${answers.contributors}
 ------
 ## License
 <br>
-
+This project is licensed under:
 [![License: ${answers.license}](https://img.shields.io/badge/License-${answers.license}-lightgrey.svg)](https://opensource.org/licenses/${answers.license})
 
 -------
 ## Inquiries...
 <br>
-For inquiries please connect with me on GitHub at: ${answers.username} or contact me by email at: ${answers.email}
+For inquiries about the repo, please contact me at: ${answers.email}. You can find more of my work at: ${answers.username}.
 
 ![picture](https://github.com/${answers.username}.png?size=80)
 
