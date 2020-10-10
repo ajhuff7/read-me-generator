@@ -1,11 +1,11 @@
 
 # Read Me Generator
-![rmg1](https://github.com/ajhuff7/portfolio-one/blob/master/assets/RMG1.JPG)
+![rmg1](https://github.com/ajhuff7/read-me-generator/blob/main/assets/RMG1.JPG)
 
 This program written in node.js creates the framework for a readme.md file. It allows the user to input data and easily create readme files. 
 
-![rmg2](https://github.com/ajhuff7/portfolio-one/blob/master/assets/RMG2.JPG)
-![rmg3](https://github.com/ajhuff7/portfolio-one/blob/master/assets/RMG3.JPG)
+![rmg2](https://github.com/ajhuff7/read-me-generator/blob/main/assets/RMG1.JPG)
+![rmg3](https://github.com/ajhuff7/read-me-generator/blob/main/assets/RMG1.JPG)
 
 <br>
 
