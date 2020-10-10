@@ -59,20 +59,12 @@ function promptUser() {
 function createReadme(answers) {
   return `
 # ${answers.title}
-=========
+
 
 ${answers.description}
 <br>
 
 ------
-## Table of Contents
-<br>
-
-* [Installation](#installation)
-
-* [Usage](#usage)
-
-* [Tests](#tests)
 
 * [Contributors](#contributing)
 
